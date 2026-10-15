@@ -42,9 +42,9 @@ const term: Seg[][] = [
   [],
   [["$ ", C.mint], ["stefan status", C.fg]],
   [["● ", C.mint], ["open to new projects", C.mint, 700]],
-  [["  mode   ", C.muted], ["ai-first", C.purple]],
+  [["  role   ", C.muted], ["ai engineer", C.purple]],
   [["  stack  ", C.muted], ["ts, react, php", C.blue]],
-  [["  based  ", C.muted], ["sofia, bg", C.gold]],
+  [["  based  ", C.muted], ["sofia, bg · remote", C.gold]],
   [["$ ", C.mint]],
 ];
 const lh = 22;
@@ -100,8 +100,8 @@ ${text(52, 136, 14, [["$ ", C.mint], ["whoami", C.muted]])}
 ${text(50, 210, 70, [["stefan", C.fg, 700]], ' letter-spacing="-2.5"')}
 <text x="50" y="284" font-size="70" font-weight="700" letter-spacing="-2.5" fill="${C.pink}" opacity=".4" filter="url(#glow)">./kovachev</text>
 <text x="50" y="284" font-size="70" font-weight="700" letter-spacing="-2.5" xml:space="preserve"><tspan fill="${C.muted}">./</tspan><tspan fill="url(#name)">kovachev</tspan></text>
-${text(52, 330, 15, [["full-stack developer, founder, team lead.", C.fg]])}
-${text(52, 358, 13, [["// shipping web apps since 2010 · ai-first since 2025", C.comment]])}
+${text(52, 330, 15, [["senior ai engineer, architect, full-stack.", C.fg]])}
+${text(52, 358, 13, [["// shipping web apps since 2010", C.comment]])}
 
 <g clip-path="url(#glass)">
   <g class="breathe"><image href="${sunset}" x="-40" y="-150" width="${imgW}" height="${imgH}" preserveAspectRatio="xMidYMid slice" filter="url(#frost)"/></g>

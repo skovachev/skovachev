@@ -1,8 +1,8 @@
-<a href="https://stefankovachev.com"><img src="assets/header.svg" width="100%" alt="stefan ./kovachev. Full-stack developer, founder, team lead. Shipping web apps since 2010, ai-first since 2025. Open to new projects."></a>
+<a href="https://stefankovachev.com"><img src="assets/header.svg" width="100%" alt="stefan ./kovachev. Senior AI engineer, software architect and full-stack developer. Open to new projects."></a>
 
-Full-stack developer in Sofia, Bulgaria. I take web products from idea to production: architecture,
-code, infrastructure and the team around it. These days agents do most of the typing; I own the
-design, the quality bar and the outcome.
+Senior AI engineer, software architect and full-stack developer in Sofia, Bulgaria. I architect and
+build products end to end: the domain model, the boundaries and the infrastructure that keeps it
+up. I spec, design and review; agents handle the volume.
 
 ## usage
 
@@ -17,26 +17,21 @@ Commands:
   automate    turn manual workflows into software, with AI where it earns its place
 
 Options:
-  --stack     typescript, react, php, laravel, postgres, supabase, cloudflare
-  --mode      ai-first
-  --based     sofia, bg (remote-friendly)
+  --stack     typescript, react, php, laravel, mysql
+  --ai        agents, mcp, rag, evals
+  --based     sofia, bg (remote)
 ```
 
-## how I build now
+## how I build
 
-I rarely write code by hand. I design, specify, orchestrate and review, and agents work inside
-guardrails I build.
-
-```diff
-- CronMonitor   built by hand        ~24 months
-+ LinkLibrary   built with agents     ~1 month
-```
+I design, specify and review. Agents handle the volume inside guardrails I build, and the result
+is mine to answer for.
 
 ```mermaid
 flowchart LR
   idea([voice note]) --> spec[IdeaPipeline<br/>brief and spec]
   spec --> base[SaasFoundation<br/>production-ready base]
-  base --> agents[agent fleet<br/>architect, developer, reviewer]
+  base --> agents[agents<br/>plan, build, review]
   agents --> gate{Gatehouse<br/>policy gate}
   gate -- approved --> ship([shipped])
   gate -- rejected --> agents
@@ -51,45 +46,38 @@ flowchart LR
   style ship stroke:#7cf0ba,fill:#7cf0ba,color:#07060d
 ```
 
-## shipped with agents (2026)
+## shipped
 
-| project            | what it is                                                                    | result                             |
-| ------------------ | ----------------------------------------------------------------------------- | ---------------------------------- |
-| **LinkLibrary**    | Turns any product page into a clean, structured record                        | idea → production in ~1 month      |
-| **ChatDashboard**  | Chat with an agent about your data; it builds live dashboard widgets          | ask a question → live dashboard    |
-| **RepairDispatch** | AI coordinator from a tenant's message to a booked technician visit           | built in a one-week hackathon      |
-| **ImportEngine**   | Messy spreadsheets in, validated records out, delivered to other systems      | messy spreadsheet → clean records  |
-| **LocationHub**    | Multi-tenant B2B SaaS with an embeddable map widget                           | one domain, two AI builders        |
+| project            | what it is                                                               | result                            |
+| ------------------ | ------------------------------------------------------------------------ | --------------------------------- |
+| **LinkLibrary**    | Turns messy web pages into clean, structured records                     | idea → production in ~1 month     |
+| **ChatDashboard**  | Ask about your data; an agent builds live dashboard widgets              | ask a question → live dashboard   |
+| **RepairDispatch** | AI coordinator from a first message to a booked visit                    | built in a one-week hackathon     |
+| **ImportEngine**   | Messy spreadsheets in, validated records out, delivered to other systems | messy spreadsheet → clean records |
+| **LocationHub**    | Multi-tenant B2B SaaS with an embeddable map widget                      | one domain, two AI builders       |
+
+Case studies: [stefankovachev.com/ai](https://stefankovachev.com/ai)
 
 <details>
 <summary><b>the build system behind them</b></summary>
 
 <br>
 
-- **IdeaPipeline**: a knowledge base where an agent turns rough or spoken ideas into specs a build agent can run.
-- **SaasFoundation**: a production-ready starting point for new products, with one set of guidelines synced to seven coding agents.
-- **Gatehouse**: configuration as code for a fleet of coding agents, with a policy gate they cannot bypass.
+- **IdeaPipeline**: a knowledge base that turns rough or spoken ideas into build-ready specs.
+- **SaasFoundation**: a production-ready foundation that every new web product starts from.
+- **Gatehouse**: a control layer for coding agents, with a policy gate they cannot bypass.
 
 What carries across all of them: deterministic rules make the decisions, models handle the fuzzy
 parts, and AI output is validated before anything is saved.
 
 </details>
 
-## toolkit
-
-```yaml
-agents:    [claude code, codex, multica]
-models:    [openrouter, elevenlabs]
-design:    [claude design, lovable]
-protocols: [mcp]
-process:   [custom skills, phased builds with a review gate, persona-driven agent qa]
-```
-
 ## changelog
 
-- **2023 →** founder, [cronboard.io](https://cronboard.io): cron monitoring for Laravel, built solo
+- **2025 →** senior ai engineer
 - **2021 →** lead full-stack developer, [Antero](https://antero.com.au): grew the Bulgarian team from one to four
 - **2021 →** team and operations lead, Flip Bulgaria
+- **2018 →** founder, [cronboard.io](https://cronboard.io): cron monitoring for Laravel, built solo
 - **2015 →** senior full-stack developer, [Flip](https://weareflip.com): LMSs, an event platform with live streaming, and Laravel as the company stack
 - **2010 →** freelance: 40+ web apps across three continents, mostly under NDA
 - **2009** software developer, SAP Labs
